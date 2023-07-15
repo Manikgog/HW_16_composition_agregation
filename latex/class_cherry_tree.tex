@@ -1,0 +1,78 @@
+\doxysection{Cherry\+Tree Class Reference}
+\hypertarget{class_cherry_tree}{}\label{class_cherry_tree}\index{CherryTree@{CherryTree}}
+Inheritance diagram for Cherry\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cherry_tree}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cherry_tree_a9b6acea4a5651bb2a810a76ea5602f8d}\label{class_cherry_tree_a9b6acea4a5651bb2a810a76ea5602f8d} 
+{\bfseries Cherry\+Tree} (const std\+::string \&color, const std\+::string \&size, const std\+::string \&name, int fruit\+Count)
+\item 
+void \mbox{\hyperlink{class_cherry_tree_aec426b6cf4c67785e9ef2c6e61b6cc32}{print\+Info}} () const override
+\item 
+\Hypertarget{class_cherry_tree_a942d4a80a0937219cf5904b458d19a55}\label{class_cherry_tree_a942d4a80a0937219cf5904b458d19a55} 
+double {\bfseries Get\+Random} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ \mbox{\hyperlink{class_cherry_tree_a948a5986be36a836187c342b915aeef0}{harvest\+Fruit}} () override
+\item 
+int \mbox{\hyperlink{class_cherry_tree_a49afa24b5506da6e89b308b2ef452c67}{Get\+Fruit\+Count}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_plants}{Plants}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Plants} (const std\+::string \&name, const std\+::string \&size, const std\+::string \&color)
+\item 
+virtual void {\bfseries print\+Info} () const
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ {\bfseries harvest\+Fruit} ()=0
+\item 
+virtual int {\bfseries Get\+Fruit\+Count} ()=0
+\item 
+std\+::string {\bfseries Get\+Name} ()
+\item 
+std\+::string {\bfseries Get\+Size} ()
+\item 
+std\+::string {\bfseries Get\+Color} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cherry_tree_a49afa24b5506da6e89b308b2ef452c67}\label{class_cherry_tree_a49afa24b5506da6e89b308b2ef452c67} 
+\index{CherryTree@{CherryTree}!GetFruitCount@{GetFruitCount}}
+\index{GetFruitCount@{GetFruitCount}!CherryTree@{CherryTree}}
+\doxysubsubsection{\texorpdfstring{GetFruitCount()}{GetFruitCount()}}
+{\footnotesize\ttfamily int Cherry\+Tree\+::\+Get\+Fruit\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_cherry_tree_a948a5986be36a836187c342b915aeef0}\label{class_cherry_tree_a948a5986be36a836187c342b915aeef0} 
+\index{CherryTree@{CherryTree}!harvestFruit@{harvestFruit}}
+\index{harvestFruit@{harvestFruit}!CherryTree@{CherryTree}}
+\doxysubsubsection{\texorpdfstring{harvestFruit()}{harvestFruit()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ Cherry\+Tree\+::harvest\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_cherry_tree_aec426b6cf4c67785e9ef2c6e61b6cc32}\label{class_cherry_tree_aec426b6cf4c67785e9ef2c6e61b6cc32} 
+\index{CherryTree@{CherryTree}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!CherryTree@{CherryTree}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily void Cherry\+Tree\+::print\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_plants}{Plants}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cherry\+Tree.\+hpp\end{DoxyCompactItemize}

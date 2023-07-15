@@ -1,0 +1,78 @@
+\doxysection{Apple\+Tree Class Reference}
+\hypertarget{class_apple_tree}{}\label{class_apple_tree}\index{AppleTree@{AppleTree}}
+Inheritance diagram for Apple\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_apple_tree}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_apple_tree_a5c6643825037c85addea1ebb3fcb7c1e}\label{class_apple_tree_a5c6643825037c85addea1ebb3fcb7c1e} 
+{\bfseries Apple\+Tree} (const std\+::string \&color, const std\+::string \&size, const std\+::string \&name, int fruit\+Count)
+\item 
+void \mbox{\hyperlink{class_apple_tree_afedaa889a041a55330944005d837c749}{print\+Info}} () const override
+\item 
+\Hypertarget{class_apple_tree_a4e8531133fa9b5a96df621406acab1cd}\label{class_apple_tree_a4e8531133fa9b5a96df621406acab1cd} 
+double {\bfseries Get\+Random} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ \mbox{\hyperlink{class_apple_tree_a99134ab2a86afb68dc1f746e892834c6}{harvest\+Fruit}} () override
+\item 
+int \mbox{\hyperlink{class_apple_tree_a4d1727490f96b110964a9d860253eb5a}{Get\+Fruit\+Count}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_plants}{Plants}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Plants} (const std\+::string \&name, const std\+::string \&size, const std\+::string \&color)
+\item 
+virtual void {\bfseries print\+Info} () const
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ {\bfseries harvest\+Fruit} ()=0
+\item 
+virtual int {\bfseries Get\+Fruit\+Count} ()=0
+\item 
+std\+::string {\bfseries Get\+Name} ()
+\item 
+std\+::string {\bfseries Get\+Size} ()
+\item 
+std\+::string {\bfseries Get\+Color} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_apple_tree_a4d1727490f96b110964a9d860253eb5a}\label{class_apple_tree_a4d1727490f96b110964a9d860253eb5a} 
+\index{AppleTree@{AppleTree}!GetFruitCount@{GetFruitCount}}
+\index{GetFruitCount@{GetFruitCount}!AppleTree@{AppleTree}}
+\doxysubsubsection{\texorpdfstring{GetFruitCount()}{GetFruitCount()}}
+{\footnotesize\ttfamily int Apple\+Tree\+::\+Get\+Fruit\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_apple_tree_a99134ab2a86afb68dc1f746e892834c6}\label{class_apple_tree_a99134ab2a86afb68dc1f746e892834c6} 
+\index{AppleTree@{AppleTree}!harvestFruit@{harvestFruit}}
+\index{harvestFruit@{harvestFruit}!AppleTree@{AppleTree}}
+\doxysubsubsection{\texorpdfstring{harvestFruit()}{harvestFruit()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ Apple\+Tree\+::harvest\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_apple_tree_afedaa889a041a55330944005d837c749}\label{class_apple_tree_afedaa889a041a55330944005d837c749} 
+\index{AppleTree@{AppleTree}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!AppleTree@{AppleTree}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily void Apple\+Tree\+::print\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_plants}{Plants}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Apple\+Tree.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\doxysection{Harvest.\+hpp}
+\hypertarget{_harvest_8hpp_source}{}\label{_harvest_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HARVESR\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HARVESR\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Ѕазовый\ класс\ ѕлоды}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_harvest}{Harvest}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_harvest}{Harvest}}()\ :\ name\_(\textcolor{stringliteral}{"{}"{}}),\ color\_(\textcolor{stringliteral}{"{}"{}}),\ size\_(\textcolor{stringliteral}{"{}"{}}),\ weight\_(0)\ \{\}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_harvest}{Harvest}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ std::string\&\ color,\ \textcolor{keyword}{const}\ std::string\&\ size,\ \textcolor{keywordtype}{double}\ weight)}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ :\ name\_(name),\ color\_(color),\ size\_(size),\ weight\_(weight)\ \{\}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_harvest}{\string~Harvest}}()\ \{\}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ printInfo()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ name\_\ <<\ std::endl;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Color:\ "{}}\ <<\ color\_\ <<\ std::endl;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Size:\ "{}}\ <<\ size\_\ <<\ std::endl;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Weight:\ "{}}\ <<\ weight\_\ <<\ std::endl;}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ getName()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name\_;}
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ getColor()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00029\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ color\_;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ getSize()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00034\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ size\_;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ getWeight()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ weight\_;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ name\_;}
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ color\_;}
+\DoxyCodeLine{00048\ \ \ \ \ std::string\ size\_;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ weight\_;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !HARVESR\_HPP}}
+
+\end{DoxyCode}

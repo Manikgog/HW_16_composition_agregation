@@ -1,0 +1,62 @@
+\doxysection{Garden Class Reference}
+\hypertarget{class_garden}{}\label{class_garden}\index{Garden@{Garden}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_garden_a151f8f6571518ad812fb66307cae270d}\label{class_garden_a151f8f6571518ad812fb66307cae270d} 
+{\bfseries Garden} ()
+\begin{DoxyCompactList}\small\item\em конструктор от 30 до 100 объектов \doxylink{class_plants}{Plants} и заполняющий ими вектор std\+::vector$<$std\+::unique\+\_\+ptr$<$\+Plants$>$$>$ Garden\+\_\+; Количество деревьев по видам заполняется случайным образом. Количество фруктов на каждом дереве заполняется тоже случайно. \end{DoxyCompactList}\item 
+\Hypertarget{class_garden_a1aa4b1e63db6d953beab562387e53325}\label{class_garden_a1aa4b1e63db6d953beab562387e53325} 
+void {\bfseries Print\+Garden} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{class_garden_a9e64fc6f5ca0c5da3586605b318023f4}{Size}} ()
+\begin{DoxyCompactList}\small\item\em метод возвращающий количество элементов в векторе std\+::vector$<$std\+::unique\+\_\+ptr$<$\+Plants$>$$>$ Garden\+\_\+. Возвращает количество деревьев в саду. \end{DoxyCompactList}\item 
+\Hypertarget{class_garden_a820aa233a6c3ecf6937169eccb8265b6}\label{class_garden_a820aa233a6c3ecf6937169eccb8265b6} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_plants}{Plants}} $>$ $>$ \& {\bfseries Get\+Garden} ()
+\item 
+\mbox{\hyperlink{class_plants}{Plants}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_garden_a8115f422f696b6bce7529efd937600cf}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em метод возвращает указатель на объект класса \doxylink{class_plants}{Plants} \end{DoxyCompactList}\item 
+\Hypertarget{class_garden_a3b2001cc56dbdd132b94463af7eae8e2}\label{class_garden_a3b2001cc56dbdd132b94463af7eae8e2} 
+size\+\_\+t {\bfseries Amount\+Of\+Harvest} ()
+\begin{DoxyCompactList}\small\item\em метод возвращает количество плодов в саду \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_garden_a8115f422f696b6bce7529efd937600cf}\label{class_garden_a8115f422f696b6bce7529efd937600cf} 
+\index{Garden@{Garden}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Garden@{Garden}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plants}{Plants}} \texorpdfstring{$\ast$}{*} Garden\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+метод возвращает указатель на объект класса \doxylink{class_plants}{Plants} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & индекс объекта класса \doxylink{class_plants}{Plants} в векторе std\+::vector$<$std\+::unique\+\_\+ptr$<$\+Plants$>$$>$ Garden\+\_\+; \\
+\hline
+\mbox{\texttt{ out}}  & {\em Plants\texorpdfstring{$\ast$}{*}} & указатель на объект \doxylink{class_plants}{Plants} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_garden_a9e64fc6f5ca0c5da3586605b318023f4}\label{class_garden_a9e64fc6f5ca0c5da3586605b318023f4} 
+\index{Garden@{Garden}!Size@{Size}}
+\index{Size@{Size}!Garden@{Garden}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily size\+\_\+t Garden\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+метод возвращающий количество элементов в векторе std\+::vector$<$std\+::unique\+\_\+ptr$<$\+Plants$>$$>$ Garden\+\_\+. Возвращает количество деревьев в саду. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em size\+\_\+t} & количество деревьев \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Garden.\+hpp\item 
+Garden.\+cpp\end{DoxyCompactItemize}

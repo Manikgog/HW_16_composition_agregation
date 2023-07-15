@@ -1,0 +1,78 @@
+\doxysection{Peach\+Tree Class Reference}
+\hypertarget{class_peach_tree}{}\label{class_peach_tree}\index{PeachTree@{PeachTree}}
+Inheritance diagram for Peach\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_peach_tree}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_peach_tree_afcde77777957965c56f6a2e20b287174}\label{class_peach_tree_afcde77777957965c56f6a2e20b287174} 
+{\bfseries Peach\+Tree} (const std\+::string \&color, const std\+::string \&size, const std\+::string \&name, int fruit\+Count)
+\item 
+void \mbox{\hyperlink{class_peach_tree_a8b9183a00388aeed62b85caa55b9d83d}{print\+Info}} () const override
+\item 
+\Hypertarget{class_peach_tree_a2f11624ad18df3af4d598bf5fc173470}\label{class_peach_tree_a2f11624ad18df3af4d598bf5fc173470} 
+double {\bfseries Get\+Random} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ \mbox{\hyperlink{class_peach_tree_a3942e34ab425ef007e9f34393579a243}{harvest\+Fruit}} () override
+\item 
+int \mbox{\hyperlink{class_peach_tree_a55fbba0dac5d3c1762484bd1728c1b20}{Get\+Fruit\+Count}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_plants}{Plants}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Plants} (const std\+::string \&name, const std\+::string \&size, const std\+::string \&color)
+\item 
+virtual void {\bfseries print\+Info} () const
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ {\bfseries harvest\+Fruit} ()=0
+\item 
+virtual int {\bfseries Get\+Fruit\+Count} ()=0
+\item 
+std\+::string {\bfseries Get\+Name} ()
+\item 
+std\+::string {\bfseries Get\+Size} ()
+\item 
+std\+::string {\bfseries Get\+Color} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_peach_tree_a55fbba0dac5d3c1762484bd1728c1b20}\label{class_peach_tree_a55fbba0dac5d3c1762484bd1728c1b20} 
+\index{PeachTree@{PeachTree}!GetFruitCount@{GetFruitCount}}
+\index{GetFruitCount@{GetFruitCount}!PeachTree@{PeachTree}}
+\doxysubsubsection{\texorpdfstring{GetFruitCount()}{GetFruitCount()}}
+{\footnotesize\ttfamily int Peach\+Tree\+::\+Get\+Fruit\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_peach_tree_a3942e34ab425ef007e9f34393579a243}\label{class_peach_tree_a3942e34ab425ef007e9f34393579a243} 
+\index{PeachTree@{PeachTree}!harvestFruit@{harvestFruit}}
+\index{harvestFruit@{harvestFruit}!PeachTree@{PeachTree}}
+\doxysubsubsection{\texorpdfstring{harvestFruit()}{harvestFruit()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_harvest}{Harvest}} $>$ Peach\+Tree\+::harvest\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_plants}{Plants}}.
+
+\Hypertarget{class_peach_tree_a8b9183a00388aeed62b85caa55b9d83d}\label{class_peach_tree_a8b9183a00388aeed62b85caa55b9d83d} 
+\index{PeachTree@{PeachTree}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!PeachTree@{PeachTree}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily void Peach\+Tree\+::print\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_plants}{Plants}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Peach\+Tree.\+hpp\end{DoxyCompactItemize}
